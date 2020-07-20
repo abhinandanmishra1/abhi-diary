@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+    /* Using box-sizing border box taaki border aur margin sb include ho jaye box me aur width in sbko include krke ho  */
+}
+
+.navbar {
+    background-color: black;
+    margin-top: -16px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+.navbar li {
+    float: left;
+    margin: 18px 22px;
+    list-style: none;
+}
+
+.navbar li a {
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover {
+    color: #dff8fa;
+    font-size: 17px;
+}
+
+.search {
+    float: right;
+    padding: 14px 25px;
+}
+
+.navbar input {
+    border: 2px solid #5d4037;
+    padding: 3px;
+}
+
+.navbar-brand {
+    float: left;
+    margin-top: 14px;
+    font-size: 27px;
+    margin-right: 30px;
+}
+
+.navbar-brand a {
+    color: #ffd400;
+    text-decoration: none;
+}
+
+.navbar-brand a:hover {
+    font-size: 30px;
+}
+
+body {
+    background-color: #d8f3f2;
+}
+
+
+/* I created main for background    */
+
+.main {
+    /* background-color: #d8f3f2; */
+    background-color: #d8f3f2;
+    background: url(../img/diary.jpg);
+    height: 1000px;
+    /* background-position: center; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 22px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.container {
+    /* border: 2px solid red; */
+    /* you know about block element and what is margin auto */
+}
+
+.container img {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+   
+    /* I want shadow of iamge or 3d rotn of img */
+}
+
+.container h3 {
+    font-family: cursive;
+    margin: 0px;
+    text-align: center;
+}
+
+.boxes {
+   
+        margin: 4px  21px;
+}
+
+.box {
+    border: 1px solid green;
+    background-color: white;
+    margin: 0px 0px;
+    padding: 8px;
+    height: 100px;
+    width: 33%;
+     display: inline-block;
+    /* display inline-block is used to make 
+    display block and inline both so that it can be in a liene and we can 
+    also apply margin auto property to make evrything in center */
+    /* color:black; */
+   
+}
+
+/*   for flag of india applied some css    */
+
+/* 
+.wheel{
+       border: 2px solid #2229bc;
+    height: 97px;
+    width: 98px;
+    border-radius: 50%;
+    margin-left: 644px;
+    margin-top: -7px;
+}
+.red{
+    background-color: orange;
+}
+
+.white{
+    background-color: white;
+}
+
+.green{
+    background-color: green;
+}
+
+.line-1{
+    lin
+} */
+
+/* relative: Positions the element relative to its normal positon and will leave a gap at its normal position*/
+
+
+/* position: relative; */
+
+
+/* absolute: Positions the element relative to the positon of its first parent*/
+
+
+/* position: absolute; */
+
+
+/* top: 34px;
+        left: 134px; */
+
+
+/* fixed: Positions the element relative to the browser window; */
+
+
+/* position: fixed;
+        right: 4px;
+        bottom: 2px */
+
+
+/* sticky: Positions the element relative to the users scroll position */
+
+.write {
+    width: 45%;
+    height: 50%;
+    margin-top: 19em;
+    border: 3px solid black;
+    color: white;
+    background-color: black;
+    margin-left: 5em;
+      padding: 4em;
+    outline-color: green;
+    outline-width: 5px;
+    outline-style: solid;
+    outline-offset: -2em;
+  
+    
+}
+.write1{
+     height: 50%;
+     width: 27%;
+}
+
+.headMe {
+    text-align: center;
+    margin: 0;
+}
+
+.jind {
+   
+    /* border: 2px solid red; */
+   
+    height: 70%;
+    float: right;
+    margin-top: 10em;
+    margin-right: 1.5em;
+}
+/* 
+@media (max-width:600px){
+    #demo{
+        display: none;
+    }
+    .write{
+        display: none;
+    }
+    .jind{
+          margin-left: -75px;
+    margin-top: 27px;
+    font-size: 11px;
+    }
+}
+@media (min-width:600px){
+    .write{
+            width: 52%;
+    height: 33%;
+    margin-top: 2em;
+    border: 3px solid black;
+    color: white;
+    background-color: black;
+    margin-left: 1em;
+    padding: 4em;
+    outline-color: green;
+    outline-width: 5px;
+    outline-style: solid;
+    outline-offset: -2em;
+    }
+    #btun{
+        display: none;
+    }
+    .jind{
+            float: right;
+    margin-top: -41em;
+    /* margin-right: 15.5em; */
+    /* margin-left: 27em;
+}
+    
+} */ 
+
+/* Footer */
+
+.footer{
+    height: 20em;
+    border: 2px solid red;
+    margin: -15px;
+    background-color: black;
+    display: flex;
+    flex-direction: wrap;
+    
+}
+
+.show-foot{
+    width: 33%;
+    height: 18em;
+    /* margin-top: 1.2em; */
+   
+    /* border: 2px solid green; */
+    
+}
+
+.show-foot h1{
+    color: white;
+    text-align: center;
+    text-shadow:white;
+}
+
+.send-message textarea,.send-message input,.send-message button{
+    display: block;
+    margin-left: 9em;
+    margin-top: 4px;
+}
+.send-message textarea{
+    height:140px;
+}
+
+.social{
+    color: white;
+}
+.address{
+    color: white;
+}
+
+#btun{
+     margin-top: 1em;
+    margin-left: 45%;
+    padding: 1em;
+    background-color: green;
+    border-radius: 15px;
+    border-color: yellow;
+    font-weight: bold;
+}

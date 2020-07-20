@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Abhi's Home</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <div class="navbar-brand">
+                    <a href="#">Abhi's Home</a>
+                </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contact Me</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search Here">
+                    <button type="submit" class="btn">Search</button>
+                </div>
+            </ul>
+
+        </nav>
+
+        <div class="container">
+            <img src="./img/abhi.jpg" alt="">
+            <h3 class="intro">Welcome in My Diary</h3>
+        </div>
+    </header>
+    <div class="boxes">
+   <!-- India Flag ----   >  I was just only trying this -->
+
+       <!-- <div class="red box"></div>
+       <div class="white box">
+           <div class="wheel">
+               <div class="line-1"></div>
+               <div class="line-2"></div>
+               <div class="line-3"></div>
+               <div class="line-4"></div>
+               <div class="line-5"></div>
+           </div>
+       </div>
+       <div class="green box"></div>
+    </div> -->
+    <main class="main">
+        <div class="write">
+            <h1 class="headMe">
+                How to win friends and influence people.
+            </h1>
+             <button onclick="typeWriter()" id="btun">About</button>
+            <p id="demo"></p>
+          
+        </div>
+                <div class="write1"></div>
+
+        <div class="jind">
+            <h3 class="clear" id="1"> जिंदगी मेरी है खुली किताब दोस्तों</h3>
+            <h3 class="clear">मेरे भले बुरे का रखना हिसाब दोस्तों</h3>
+            
+                <button id="btun" onclick="clear()">Next</button>
+            
+        </div>
+    </main>
+
+
+
+
+    <script>
+        var i = 0;
+var txt = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perferendis dicta \
+explicabo officia! Enim sunt placeat voluptates asperiores distinctio aliquam quisquam quasi \
+deserunt non optio, debitis qui commodi esse unde? Lorem ipsum, dolor\
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perferendis dicta\
+ explicabo officia! Enim sunt placeat voluptates asperiores distinctio aliquam quisquam\
+  quasi deserunt non optio, debitis qui commodi esse unde? Lorem ipsum,                  door sit amet\
+   consectetur adipisicing elit. Culpa esse illum odio non nihil, incidunt saepe illo necessitatibus \
+   minima porro rem ipsum perferendis dolor dolorem corrupti ut dignissimos mollitia a qui quasi error \
+   ullam ea repudiandae.' ; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+    </script>
+    <script>
+     function clear(){
+         document.getElementsById("1").innerHTML="hello"
+     }
+    </script>
+</body>
+
+<footer>
+    <div class="footer">
+        <div class="show-foot">
+              <div class="send-message">
+                  <h1>Send Me Message</h1>
+                  <textarea name="sendmsg" id="" cols="30" rows="10" placeholder="Write Your Message Here..."></textarea>
+                  <input type="email" name="email" id="" placeholder="Your Email">
+                  <button type="submit">Send</button>
+              </div>
+        </div>
+        <div class="show-foot">
+            <div class="social">
+               <h1>Social Media</h1>
+            </div>
+        </div>
+        <div class="show-foot">
+            <div class="address">
+                <h1>Address</h1>
+                <i class="fa fa-home"></i>
+                <p>Jallapur,Giraia Bazar,Ambedkar Nagar</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
